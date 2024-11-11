@@ -1,0 +1,29 @@
+{
+  "name": "fastpoll",
+  "version": "1.0.0",
+  "description": "Fast Poll is a polling app",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "node ./server/server.js",
+    "watch-server": "nodemon ./server/server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "dev": "concurrently \"npm run watch-server\" \"cd client && npm start\"",
+    "prod": "concurrently \"npm run watch-server\" \"cd client && npm serve\""
+  },
+  "author": "hazru.anurag@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^5.21.6",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.9.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^3.1.7"
+  }
+}

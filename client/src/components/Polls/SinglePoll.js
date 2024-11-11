@@ -1,0 +1,92 @@
+import React, { useState, useContext } from 'react';
+import PropTypes from 'prop-types';
+
+import {
+  Card,
+  Tooltip,
+  Popconfirm,
+  Button
+} from 'antd';
+
+import Chart from '../Chart';
+import EditPoll from '../EditPoll';
+import CastVote from '../CastVote';
+import Context from '../Context';
+
+
+/**
+ * @class EditPoll
+ * @usedIn {Poll}
+ */
+function SinglePoll(props) {
+  const [isDeleting, setDeleting] = useState(false);
+  const context = useContext(Context);
+  const { poll } = props;
+
+  const deletePoll = (context) => {
+    setDeleting(true);
+    context.handleDeletePoll(poll._id);
+  }
+
+
+  // Poll Actions (vote/edit/delete)
+  const ActionVote = (
+    <Tooltip placement="left" title="voto">
+      <CastVote icon="pie-chart" poll={poll} />
+    </Tooltip>
+  )
+  const ActionEdit = (
+    <Tooltip placement="left" title="edit">
+      <EditPoll poll={poll} />
+    </Tooltip>
+  )
+  const ActionPop = (
+    <Popconfirm
+      placement="top"
+      title={'¿borrar esta encuesta?'}
+      onConfirm={() => deletePoll(context)}
+      okText="Si"
+      cancelText="No"
+    >
+      <Tooltip placement="left" title="Eliminar">
+        <Button icon={isDeleting ? 'loading' : 'delete'} />
+      </Tooltip>
+    </Popconfirm>
+  );
+
+  const Actions = [
+    ActionVote,
+    ActionEdit,
+    ActionPop
+  ];
+
+  return (
+    <section>
+      <div>
+        <Card className="polls__item" actions={Actions}>
+          <h2 className="polls__item-title">{poll.name}</h2>
+          <Chart name={poll.name} votes={poll.votes} />
+        </Card>
+      </div>
+    </section>
+  )
+}
+
+SinglePoll.propTypes = {
+  poll: PropTypes.shape({
+    _id: PropTypes.string,
+    votes: PropTypes.arrayOf(
+      PropTypes.shape({
+        color: PropTypes.string,
+        name: PropTypes.string,
+        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        __id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        _id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      })
+    ),
+    name: PropTypes.string
+  }).isRequired,
+  handleDeletePoll: PropTypes.func
+}
+
+export default SinglePoll;
