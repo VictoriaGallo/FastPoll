@@ -1,6 +1,6 @@
 # FastPoll
 FastPoll está organizado en una estructura de aplicación de pila completa (full-stack) que incluye un cliente (frontend) y un servidor (backend). el proyecto ilustra cómo integrar React, Node.js y APIs RESTful para una aplicación de votación en tiempo real que usa actualizaciones en tiempo real y gestión de datos con MongoDB.
-
+**creado por Laura Gallo y Karol Payares**
 **Frontend (React):**
 1. **App.js** maneja la estructura de enrutamiento de la aplicación, permitiendo navegación entre componentes como **Polls, CreatePoll, y About**. Utiliza **BrowserRouter** de **react-router-dom** para las rutas.
 2. **CastVote.js** es un componente clave para votar en tiempo real. Utiliza **Modal** y **Radio** de Ant Design para el formulario de votación, e integra **socket.io** para actualizar los votos en tiempo real. El componente valida y registra los votos con el backend.
@@ -224,6 +224,3 @@ npm run build
 * [Express](https://expressjs.com/)
 * [Axios](https://github.com/axios/axios)
 * [Mongoosejs](https://mongoosejs.com/)
-
-
-# FastPoll
