@@ -3,6 +3,8 @@ FastPoll está organizado en una estructura de aplicación de pila completa (ful
 
 **creado por Laura Gallo y Karol Payares.**
 
+[figma](https://www.figma.com/design/EnaUHGJAU02P91KWF58iHR/Fast-Poll?node-id=0-1&t=J5gVXj1OTzxSIc7i-1)
+
 **Frontend (React):**
 1. **App.js** maneja la estructura de enrutamiento de la aplicación, permitiendo navegación entre componentes como **Polls, CreatePoll, y About**. Utiliza **BrowserRouter** de **react-router-dom** para las rutas.
 2. **CastVote.js** es un componente clave para votar en tiempo real. Utiliza **Modal** y **Radio** de Ant Design para el formulario de votación, e integra **socket.io** para actualizar los votos en tiempo real. El componente valida y registra los votos con el backend.
