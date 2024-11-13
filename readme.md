@@ -223,7 +223,7 @@ npm run build
 * [React](https://reactjs.org)
 * [AntDesign](https://ant.design)
 * [Nodejs](https://nodejs.org/)
-* [Vercel](https://vercel.com/)
+* [Render](https://render.com/)
 * [Express](https://expressjs.com/)
 * [Axios](https://github.com/axios/axios)
 * [Mongoosejs](https://mongoosejs.com/)
