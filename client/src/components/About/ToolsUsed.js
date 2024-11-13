@@ -25,7 +25,7 @@ const data = [
   {
     title: "Mongoosejs",
     url: 'https://mongoosejs.com/',
-    summery: 'Mongoose ofrece una solución sencilla, basada en esquemas, para modelar los datos de su aplicación.'
+    summery: 'Mongoose ofrece una solución sencilla, basada en esquemas, para modelar los datos de la aplicación.'
   },
 
 ]
