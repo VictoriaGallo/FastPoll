@@ -59,9 +59,9 @@ const Workflow = () => {
       <Timeline.Item>
         <h3>Despliegue</h3>
         <p>
-          nosotras usamos <a href="https://heroku.com">Heroku</a> para desplegar nuestra aplicación en línea,
-          heroku nos permite desplegar aplicaciones nodejs de forma gratuita utiliza algo llamado Dynos para desplegar aplicaciones nodejs.
-          Finalmente para desplegar nuestra aplicación voy a construir nuestro código React del lado del cliente y hacer una construcción de producción optimizada.
+          nosotras usamos <a href="https://heroku.com">Vercel</a> para desplegar nuestra aplicación en línea,
+          Vercel se integra de manera seamless con tus repositorios de Git 
+          Finalmente Vercel es compatible con una amplia variedad de frameworks y lenguajes de programación, incluyendo React, Next.js, Vue, Angular, Nuxt.js, Gatsby, y muchos más. 
               </p>
       </Timeline.Item>
     </Timeline>
