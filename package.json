@@ -5,10 +5,13 @@
   "main": "./server/server.js",
   "scripts": {
     "start": "node ./server/server.js",
-    "watch-server": "nodemon ./server/server.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
-    "dev": "concurrently \"npm run watch-server\" \"cd client && npm start\"",
-    "prod": "concurrently \"npm run watch-server\" \"cd client && npm serve\""
+  "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/server.js"
+}
+
   },
   "author": "hazru.anurag@gmail.com",
   "license": "MIT",
