@@ -27,11 +27,7 @@ const data = [
     url: 'https://mongoosejs.com/',
     summery: 'Mongoose ofrece una solución sencilla, basada en esquemas, para modelar los datos de su aplicación.'
   },
-  {
-    title: "mLab",
-    url: 'https://mlab.com/',
-    summery: 'Base de datos como servicio para MongoDB. Ahora forma parte de la familia MongoDB, con más de 1 millón de despliegues en todo el mundo.'
-  },
+
 ]
 
 function ToolsUsed() {
