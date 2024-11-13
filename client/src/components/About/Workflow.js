@@ -59,9 +59,9 @@ const Workflow = () => {
       <Timeline.Item>
         <h3>Despliegue</h3>
         <p>
-          nosotras usamos <a href="https://heroku.com">Vercel</a> para desplegar nuestra aplicación en línea,
-          Vercel se integra de manera seamless con tus repositorios de Git 
-          Finalmente Vercel es compatible con una amplia variedad de frameworks y lenguajes de programación, incluyendo React, Next.js, Vue, Angular, Nuxt.js, Gatsby, y muchos más. 
+          nosotras usamos <a href="https://render.com">Render</a> para desplegar nuestra aplicación en línea,
+          Render es una plataforma que permite desplegar frontend y backend desde un solo repositorio.
+          Finalmente Render es compatible con una amplia variedad de frameworks y lenguajes de programación, incluyendo React y Node.js. 
               </p>
       </Timeline.Item>
     </Timeline>
