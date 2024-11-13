@@ -20,7 +20,7 @@ FastPoll está organizado en una estructura de aplicación de pila completa (ful
 
 **Readme y Configuración:**
 1. El archivo readme.md explica los pasos para ejecutar el proyecto y detalla los endpoints de la API, lo que facilita la comprensión y uso de la API RESTful.
-2. Herramientas usadas: React, Node.js, Express, Mongoose, socket.io, Ant Design (para el estilo del frontend) y Heroku para despliegue.
+2. Herramientas usadas: React, Node.js, Express, Mongoose, socket.io, Ant Design (para el estilo del frontend) y Vercel para despliegue.
 
 **Resumen de Funcionalidades y Flujo:**
 - Crear Encuestas: Puedes crear encuestas con múltiples opciones de voto.
@@ -184,7 +184,6 @@ A quick look at the folder structure of this project.
 
 
 ## Get Started
-npm install -g nodemon
 
 Install all the dependencies
 ```bash
@@ -224,7 +223,7 @@ npm run build
 * [React](https://reactjs.org)
 * [AntDesign](https://ant.design)
 * [Nodejs](https://nodejs.org/)
-* [Heroku](https://heroku.com/)
+* [Vercel](https://vercel.com/)
 * [Express](https://expressjs.com/)
 * [Axios](https://github.com/axios/axios)
 * [Mongoosejs](https://mongoosejs.com/)
